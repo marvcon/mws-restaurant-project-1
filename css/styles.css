@@ -61,6 +61,11 @@ nav {
 nav h1 {
   margin: auto;
 }
+
+nav h1 a:focus,
+nav h1 a:hover {
+  background:  blue;
+}
 nav h1 a {
   color: #fff;
   font-size: 14pt;
@@ -110,9 +115,10 @@ nav h1 a {
 .filter-options {
   width: 100%;
   height: 50px;
-  background-color: #3397DB;
+  background-color: #ff003b;
   align-items: center;
 }
+
 .filter-options h2 {
   color: white;
   font-size: 1rem;
@@ -142,6 +148,12 @@ nav h1 a {
   display: flex;
   flex-wrap: wrap;
 }
+
+#restaurants-list li a:focus,
+#restaurants-list li a:hover {
+  background:  blue;
+}
+
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
@@ -277,4 +289,15 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: -1000px;
+  background-color: white;
+  padding: 5px 10px;
+}
+.skip-link:focus {
+  left: 15px;
 }
