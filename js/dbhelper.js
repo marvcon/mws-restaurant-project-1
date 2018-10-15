@@ -176,7 +176,7 @@ class DBHelper {
             (max-width: 600px) 600px,
             400px`;
   }
-  
+
   /**
    * Map marker for a restaurant.
    */
@@ -200,6 +200,12 @@ class DBHelper {
     );
     return marker;
   } */
-
+  static offlineMap() {
+    const map = document.getElementById('map');
+    map.className = "offline-Map";
+    map.innerHTML = `<div class="warning-icon">!</div>
+    <div class="warning-message">Maps are not loading correctly!</div>
+    <div class="warning-suggestion">The application could be offline? Check back later, if problem persist refresh the page in your browser.</div>`;
+  }
 }
 

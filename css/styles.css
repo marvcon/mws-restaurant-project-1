@@ -301,3 +301,34 @@ nav h1 a {
 .skip-link:focus {
   left: 15px;
 }
+/* Offline maps warning 
+.offline-Map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+}
+.offline-Map div {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.offline-Map .warning-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background-color: #1bcce8;
+  font-size: 2.5em;
+  color: white;
+  margin: 0 25px 25px;
+}
+.offline-Map .warning-message {
+  font-size: 1.3em;
+}
+.offline-Map .warning-suggestion {
+  font-size: .9em;
+}
+*/
